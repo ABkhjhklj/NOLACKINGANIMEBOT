@@ -4,8 +4,7 @@ import time
 
 BOT_TOKEN = "8388130267:AAGzhuxXJTbDIS4BiBKMxPIDxc4kORkL_Ho"
 CHANNEL = "@AABEL_BOT"
-OPENAI_KEY = "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"
-
+OPENAI_KEY = os.getenv("OPENAI_KEY")
 bot = Bot(token=BOT_TOKEN)
 client = OpenAI(api_key=OPENAI_KEY)
 
